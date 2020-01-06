@@ -21,6 +21,8 @@ function blueprintEntry(version, isBook, name, fileName) {
 }
 
 export const blueprintData = [
+  blueprintEntry("0.17", false, "Balancer: 4x4", "factorio-017-bp-balancer-4x4"),
+  blueprintEntry("0.17", false, "Balancer: 8x8", "factorio-017-bp-balancer-8x8"),
   blueprintEntry("0.17", true, "Smelting", "factorio-017-book-smelting"),
   blueprintEntry("0.17", true, "Mining", "factorio-017-book-mining"),
   blueprintEntry("0.17", true, "Defence", "factorio-017-book-defence"),
