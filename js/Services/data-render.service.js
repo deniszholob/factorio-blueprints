@@ -1,6 +1,6 @@
 // Imports
-import { Clipboard } from '../Classes/Clipboard.class.js';
-import { HttpClient } from '../Classes/HttpClient.class.js';
+import { Clipboard } from '../classes/Clipboard.class.js';
+import { HttpClient } from '../classes/HttpClient.class.js';
 
 /** Renders out the blueprint entries in a list */
 export class DataRenderService {
