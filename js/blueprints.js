@@ -1,38 +1,39 @@
+function getRaw(name) {
+  return "./blueprint-data/" + name + ".txt";
+}
+
+function getUrl(name) {
+  return "https://github.com/deniszholob/factorio-blueprints/blob/master/blueprint-data/" + name + ".txt";
+}
+
+function getName(version, name) {
+  return "Factorio v" + version + " - " + name;
+
+}
+
+function blueprintEntry(version, isBook, name, fileName) {
+  return {
+    "name": getName(version, name),
+    "isBook": isBook,
+    "url": getUrl(fileName),
+    "raw": getRaw(fileName),
+  };
+}
+
 export const blueprintData = [
-  {
-    "name": "Smelting",
-    "isBook": true,
-    "url": "https://gist.github.com/dddgamer/326acde2fbcc604e9affa78c4c9e211d",
-    "raw": "https://gist.githubusercontent.com/dddgamer/326acde2fbcc604e9affa78c4c9e211d/raw/5b7b4de0eb2d180fe478bb7b87834dfdc0eaa5cd/DDD-Smelting.txt"
-  },
-  {
-    "name": "Steam Power",
-    "isBook": true,
-    "url": "https://gist.github.com/dddgamer/3ddc407862874e3b734062f73f9434c1",
-    "raw": "https://gist.githubusercontent.com/dddgamer/3ddc407862874e3b734062f73f9434c1/raw/cc43d9b6183cd805caa9f742edb2a88443a0a7d6/DDD-Steam-Power.txt"
-  },
-  {
-    "name": "Rails 2 Lane RHD (MojoD's Remix)",
-    "isBook": true,
-    "url": "https://gist.github.com/dddgamer/9c752d15a99f0d336da71686d0b3b8e0",
-    "raw": "https://gist.githubusercontent.com/dddgamer/9c752d15a99f0d336da71686d0b3b8e0/raw/e36e1ab02309be409109c3db7664faaa4e790953/DDD-Rail-2-Lane-(RHD)-%255BMojoD%2520Remix%255D.txt"
-  },
-  {
-    "name": "Rails 2 Lane RHD Decorations",
-    "isBook": true,
-    "url": "https://gist.github.com/dddgamer/9ccb73bddbb90d4bc01682b66aac5dec",
-    "raw": "https://gist.github.com/dddgamer/9c752d15a99f0d336da71686d0b3b8e0"
-  },
-  {
-    "name": "Factorio v0.17 Power Solar Book",
-    "isBook": true,
-    "url": "https://pastebin.com/JZJ7FHhK",
-    "raw": "https://pastebin.com/raw/JZJ7FHhK"
-  },
-  {
-    "name": "",
-    "isBook": true,
-    "url": "",
-    "raw": ""
-  },
-]
+  blueprintEntry("0.17", true, "Smelting", "factorio-017-book-smelting"),
+  blueprintEntry("0.17", true, "Mining", "factorio-017-book-mining"),
+  blueprintEntry("0.17", true, "Defence", "factorio-017-book-defence"),
+  blueprintEntry("0.17", true, "Power: Steam", "factorio-017-book-power-steam"),
+  blueprintEntry("0.17", true, "Power: Solar", "factorio-017-book-power-solar"),
+  blueprintEntry("0.17", true, "Power: Nuclear", "factorio-017-book-power-nuclear"),
+  blueprintEntry("0.17", true, "Builds: Starter/Mini MEF", "factorio-017-book-builds-starter-mini-mef"),
+  blueprintEntry("0.17", true, "Builds: Bots + Beacons", "factorio-017-book-builds-bot-beaconed"),
+  blueprintEntry("0.17", true, "Builds: Oil", "factorio-017-book-builds-oil"),
+  blueprintEntry("0.17", true, "Builds: Military", "factorio-017-book-builds-military"),
+  blueprintEntry("0.17", true, "MEF (MojoD ME3 Remix)", "factorio-017-book-mef-mojod-me3-remix"),
+  blueprintEntry("0.17", true, "MSF (WIP)", "factorio-017-book-msf"),
+  blueprintEntry("0.17", true, "Rails 2 Lane RHD (MojoD Remix)", "factorio-017-book-rails-2-lane-rhd-mojod-remix"),
+  blueprintEntry("0.17", true, "PAX Stations", "factorio-017-book-pax-stations"),
+  // blueprintEntry("0.17", true, "Name", "Filename"),
+];

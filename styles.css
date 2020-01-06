@@ -24,15 +24,16 @@ section,
 
 section .container,
 .section .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
 /* === List Group === */
 
 .list-group {
-    max-width: 400px;
+    min-width: 400px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -56,6 +57,11 @@ section .container,
 .list-group-left {
     display: flex;
     border-right: 1px solid #313131;
+}
+
+.list-group-left:hover {
+    color: #FF8400;
+    text-decoration: none;
 }
 
 .list-group-right {
