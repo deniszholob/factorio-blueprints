@@ -1,5 +1,5 @@
 // Imports
-import { DataRenderService } from './services/data-render.service.js';
+import { DataRenderService } from './Services/data-render.service.js';
 import { blueprintData } from './blueprints.js';
 
 // Constants
