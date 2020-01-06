@@ -29,20 +29,46 @@ section .container,
 }
 
 
+/* === List Group === */
+
 .list-group {
     max-width: 400px;
     margin: auto;
 }
 
-
 .list-group-item {
     background-color: rgba(0, 0, 0, 0.2);
     border-color: #313131;
-    padding: 0.5rem 0.75rem;
+    padding: 0;
+    display: flex;
 }
 
-.list-group-item:hover {
+.list-group-item>*:hover {
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.list-group-item>* {
+    padding: 0.5rem 0.75rem;
+    flex: 1 100%;
+    position: relative;
+}
+
+.list-group-left {
+    display: flex;
+    border-right: 1px solid #313131;
+}
+
+.list-group-right {
+    display: flex;
+    flex: 2 0px;
+}
+
+
+/* === Misc === */
+
+img {
+    height: fit-content;
+    width: fit-content;
 }
 
 .h-100 {
@@ -56,12 +82,50 @@ section .container,
 }
 
 .fas {
-    /* padding: 5px 8px; */
     padding: 0.5rem 0.25rem;
 }
 
+.bp-txt {
+    margin: 0 0.75rem;
+}
 
-.list-group-item > * {
-    padding: 0 5px;
-    font-size: 1.1rem;
+
+/* === Tooltip === */
+
+.tool-tip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tool-tip .tool-tip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    padding: 0.25rem 0.75rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 115%;
+    left: 0;
+    transition: opacity 0.3s;
+}
+
+.tool-tip .tool-tip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(100, 100, 100, 0.3) transparent transparent transparent;
+}
+
+.tool-tip:hover .tool-tip-text {
+    visibility: visible;
+    opacity: 1;
 }

@@ -76,33 +76,33 @@
     </script>
 </head>
 
-<body class="d-flex flex-column h-100" onload="onLoad()">
+<body class="d-flex flex-column h-100">
     <main role="main" class="flex-shrink-0">
         <section>
             <div class="container">
-                <h1 class="text-center">Factorio Blueprint Collection</h1>
+                <h1 class="text-center">DDDGamer's Factorio Blueprint Collection</h1>
             </div>
         </section>
         <section>
             <div class="container">
-                <div id="Blueprint_List" class="list-group">
-                <!-- <div id="Blueprint_List" class=""> -->
-                </div>
+                <div id="Blueprint_List" class="list-group"></div>
             </div>
         </section>
     </main>
 
     <footer class="footer mt-auto py-3">
         <div class="container">
-
             <p class="text-muted">
-                See <a href="https://github.com/deniszholob/factorio-blueprints">src on Github</a>
+                See
+                <a href="https://github.com/deniszholob/factorio-blueprints" rel="noopener" target="_blank">
+                    src on Github
+                </a>
             </p>
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/blueprints.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- https://jakearchibald.com/2017/es-modules-in-browsers/ -->
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
