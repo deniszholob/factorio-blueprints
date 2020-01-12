@@ -38,5 +38,6 @@ export const blueprintData = [
   blueprintEntry("0.17", true, "MSF (WIP)", "factorio-017-book-msf"),
   blueprintEntry("0.17", true, "Rails 2 Lane RHD (MojoD Remix)", "factorio-017-book-rails-2-lane-rhd-mojod-remix"),
   blueprintEntry("0.17", true, "PAX Stations", "factorio-017-book-pax-stations"),
+  blueprintEntry("0.17", true, "Spawn Area", "factorio-017-book-spawn"),
   // blueprintEntry("0.17", true, "Name", "Filename"),
 ];

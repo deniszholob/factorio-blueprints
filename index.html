@@ -81,10 +81,14 @@
         <section>
             <div class="container">
                 <h1 class="text-center">DDDGamer's Factorio Blueprint Collection</h1>
+                <p class="text-center txt-muted">
+                    Click on the Blueprint to copy, then import in Factorio Blueprint menu.
+                </p>
             </div>
         </section>
         <section>
             <div class="container">
+                <input type="text" class="form-control mb-3" id="InputSearch" onkeyup="filterBlueprints('InputSearch')" placeholder="Filter/Search Blueprint Name" aria-label="Username">
                 <div id="Blueprint_List" class="list-group"></div>
             </div>
         </section>
@@ -92,7 +96,7 @@
 
     <footer class="footer mt-auto py-3">
         <div class="container">
-            <p class="text-muted">
+            <p class="txt-muted">
                 See
                 <a href="https://github.com/deniszholob/factorio-blueprints" rel="noopener" target="_blank">
                     src on Github

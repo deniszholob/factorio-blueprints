@@ -4,7 +4,7 @@ body {
     color: #EEEEEE;
 }
 
-.text-muted {
+.txt-muted {
     color: #808e99;
 }
 
@@ -31,7 +31,7 @@ section .container,
 
 /* === List Group === */
 
-.list-group {
+.list-group, .form-control {
     min-width: 400px;
     max-width: 600px;
     margin: auto;
@@ -70,6 +70,19 @@ section .container,
 }
 
 
+/* === Form Control === */
+
+.form-control,
+.form-control:focus {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: #313131;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 1px #1f6288;
+}
+
+
 /* === Misc === */
 
 img {
@@ -84,7 +97,7 @@ img {
 .btn-link {
     padding: 0;
     vertical-align: baseline;
-    color: #2768bc;
+    color: #1f6288;
 }
 
 .fas {

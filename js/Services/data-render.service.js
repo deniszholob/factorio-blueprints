@@ -83,7 +83,7 @@ function getElLeft(data) {
  */
 function getElRight(data) {
   const elDivListItemRight = getExternalLinkEl(data.url);
-  elDivListItemRight.classList = "list-group-right tool-tip";
+  elDivListItemRight.classList = "list-group-right tool-tip txt-muted";
 
   elDivListItemRight.appendChild(getIcon("external-link-alt"));
   elDivListItemRight.appendChild(getElTooltip("Source"));
