@@ -21,9 +21,9 @@ function blueprintEntry(version, isBook, name, fileName) {
 }
 
 export const blueprintData = [
-  blueprintEntry("0.17", false, "Balancer: 4x4", "factorio-017-bp-balancer-4x4"),
-  blueprintEntry("0.17", false, "Balancer: 8x8", "factorio-017-bp-balancer-8x8"),
-  blueprintEntry("0.17", true, "Builds: Starter/Mini MEF", "factorio-017-book-builds-starter-mini-mef"),
+  blueprintEntry("0.17", false, "Belt Balancer: 4x4", "factorio-017-bp-balancer-4x4"),
+  blueprintEntry("0.17", false, "Belt Balancer: 8x8", "factorio-017-bp-balancer-8x8"),
+  blueprintEntry("0.17", true, "Builds: Starter/Mini MEF/Mall", "factorio-017-book-builds-starter-mini-mef"),
   blueprintEntry("0.17", true, "Smelting", "factorio-017-book-smelting"),
   blueprintEntry("0.17", true, "Mining", "factorio-017-book-mining"),
   blueprintEntry("0.17", true, "Defence", "factorio-017-book-defence"),
@@ -35,8 +35,8 @@ export const blueprintData = [
   blueprintEntry("0.17", true, "Builds: Oil", "factorio-017-book-builds-oil"),
   blueprintEntry("0.17", true, "Builds: Military", "factorio-017-book-builds-military"),
   blueprintEntry("0.17", true, "Builds: Bots + Beacons", "factorio-017-book-builds-bot-beaconed"),
-  blueprintEntry("0.17", true, "MEF (MojoD ME3 Remix)", "factorio-017-book-mef-mojod-me3-remix"),
-  blueprintEntry("0.17", true, "MSF (WIP)", "factorio-017-book-msf"),
+  blueprintEntry("0.17", true, "Bot MEF/Mall (MojoD ME3 Remix)", "factorio-017-book-mef-mojod-me3-remix"),
+  blueprintEntry("0.17", true, "Bot MSF (WIP)", "factorio-017-book-msf"),
   blueprintEntry("0.17", true, "Rails 2 Lane RHD (MojoD Remix)", "factorio-017-book-rails-2-lane-rhd-mojod-remix"),
   blueprintEntry("0.17", true, "PAX Stations", "factorio-017-book-pax-stations"),
   blueprintEntry("0.17", true, "Spawn Area", "factorio-017-book-spawn"),

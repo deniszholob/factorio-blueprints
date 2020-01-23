@@ -88,20 +88,33 @@
         </section>
         <section>
             <div class="container">
-                <input type="text" class="form-control mb-3" id="InputSearch" onkeyup="filterBlueprints('InputSearch')" placeholder="Filter/Search Blueprint Name" aria-label="Username">
+                <input type="text" class="form-control mb-3" id="InputSearch" onkeyup="filterBlueprints('InputSearch')"
+                    placeholder="Filter/Search Blueprint Name" aria-label="Username">
                 <div id="Blueprint_List" class="list-group"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h3 class="text-center">Other Blueprints</h3>
+                <ul id="Link_List" class="list-group"></ul>
             </div>
         </section>
     </main>
 
     <footer class="footer mt-auto py-3">
         <div class="container">
-            <p class="txt-muted">
-                See
-                <a href="https://github.com/deniszholob/factorio-blueprints" rel="noopener" target="_blank">
-                    src on Github
-                </a>
-            </p>
+            <div class="row txt-muted text-center">
+                <div class="col-6">
+                    Design by <a href="https://deniszholob.com">Denis Zholob</a>
+                </div>
+                <div class="col-6">
+                    See
+                    <a href="https://github.com/deniszholob/factorio-blueprints" rel="noopener" target="_blank">
+                        src on Github
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 

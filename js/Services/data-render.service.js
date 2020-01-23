@@ -1,6 +1,7 @@
 // Imports
 import { Clipboard } from '../Classes/Clipboard.class.js';
 import { HttpClient } from '../Classes/HttpClient.class.js';
+import { UtilService } from './util.service.js';
 
 /** Renders out the blueprint entries in a list */
 export class DataRenderService {
@@ -13,7 +14,7 @@ export class DataRenderService {
   }
 
   /**
-   * Adds the bplueprint entry to the list display
+   * Adds the blueprint entry to the list display
    * @param {*} data Blueprint data to display, should contain name, url, raw and isBook fields
    */
   renderDataPoint(data) {
@@ -43,6 +44,7 @@ function getElLeft(data) {
   const elSpanText = document.createElement("span");
   elSpanText.classList = "bp-txt";
   const elTextNode = document.createTextNode(" " + data.name);
+  elSpanText.appendChild(UtilService.getIcon("paste"));
   elSpanText.appendChild(elTextNode);
 
   // Logic for changing tooltip text
@@ -70,7 +72,7 @@ function getElLeft(data) {
 
   // Add all the elements to the left side
   elDivListItemLeft.appendChild(elDivTooltip);
-  elDivListItemLeft.appendChild(getElBlueprintImage(data.isBook));
+  elDivListItemLeft.appendChild(UtilService.getElBlueprintImage(data.isBook));
   elDivListItemLeft.appendChild(elSpanText);
 
   return elDivListItemLeft;
@@ -82,17 +84,17 @@ function getElLeft(data) {
  * @param {*} data Blueprint data
  */
 function getElRight(data) {
-  const elDivListItemRight = getExternalLinkEl(data.url);
+  const elDivListItemRight = UtilService.getExternalLinkEl(data.url);
   elDivListItemRight.classList = "list-group-right tool-tip txt-muted";
 
-  elDivListItemRight.appendChild(getIcon("external-link-alt"));
+  elDivListItemRight.appendChild(UtilService.getIcon("external-link-alt"));
   elDivListItemRight.appendChild(getElTooltip("Source"));
 
   return elDivListItemRight;
 }
 
 /**
- * Simple div containing text with appripriate classes assigned
+ * Simple div containing text with appropriate classes assigned
  * @param {String} text
  */
 function getElTooltip(text) {
@@ -105,35 +107,3 @@ function getElTooltip(text) {
   return elDivTooltip;
 }
 
-/**
- * <a href="url" rel="noopener" target="_blank"></a>
- * @param {String} url
- */
-function getExternalLinkEl(url) {
-  const elLink = document.createElement("a");
-  elLink.href = url;
-  elLink.rel = "noopener";
-  elLink.target = "_blank";
-  return elLink;
-}
-
-/**
- * <i class="fas fa-id"></i>
- * @param {String} id of the Font Awesome Icon
- */
-function getIcon(id) {
-  const elIcon = document.createElement("i");
-  elIcon.classList = "fas fa-" + id;
-  return elIcon;
-}
-
-/**
- * @returns Image of a book or blueprint depending on the boolean input
- * @param {Boolean} isBook
- */
-function getElBlueprintImage(isBook) {
-  const elImage = document.createElement("img");
-  elImage.src = isBook ? "https://wiki.factorio.com/images/Blueprint_book.png" : "https://wiki.factorio.com/images/Blueprint.png";
-  elImage.alt = isBook ? "Blueprint Book" : "Blueprint";
-  return elImage;
-}

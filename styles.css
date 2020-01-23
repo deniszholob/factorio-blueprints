@@ -76,6 +76,7 @@ section .container,
 .form-control:focus {
     background: rgba(0, 0, 0, 0.4);
     border-color: #313131;
+    color: #ced4da;
 }
 
 .form-control:focus {
@@ -147,4 +148,8 @@ img {
 .tool-tip:hover .tool-tip-text {
     visibility: visible;
     opacity: 1;
+}
+
+.highlight {
+    color: #1f6288;
 }
