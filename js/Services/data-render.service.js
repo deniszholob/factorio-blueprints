@@ -20,7 +20,7 @@ export class DataRenderService {
   renderDataPoint(data) {
     if (data.name && data.url) {
       const elDivListItem = document.createElement("div");
-      elDivListItem.classList = "list-group-item";
+      elDivListItem.classList = "list-group-item align-items-center";
 
       elDivListItem.appendChild(getElLeft(data));
       elDivListItem.appendChild(getElRight(data));
@@ -38,7 +38,7 @@ export class DataRenderService {
  */
 function getElLeft(data) {
   const elDivListItemLeft = document.createElement("div");
-  elDivListItemLeft.classList = "list-group-left tool-tip";
+  elDivListItemLeft.classList = "list-group-left tool-tip align-items-center";
 
   // Blueprint Name Text
   const elSpanText = document.createElement("span");
@@ -72,11 +72,11 @@ function getElLeft(data) {
 
   // Add all the elements to the left side
   elDivListItemLeft.appendChild(elDivTooltip);
-  elDivListItemLeft.appendChild(UtilService.getElBlueprintImage(data.isBook));
+  const elIcon = data.icon ? UtilService.getElBlueprintIcon(data.isBook, data.icon) : UtilService.getElBlueprintImage(data.isBook);
+  elDivListItemLeft.appendChild(elIcon);
   elDivListItemLeft.appendChild(elSpanText);
 
   return elDivListItemLeft;
-
 }
 
 /**

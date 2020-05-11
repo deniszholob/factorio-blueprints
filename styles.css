@@ -17,6 +17,10 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 section,
 .section {
     display: block;
@@ -87,8 +91,10 @@ section .container,
 /* === Misc === */
 
 img {
-    height: fit-content;
-    width: fit-content;
+    /* height: fit-content;
+    width: fit-content; */
+    height: 48px;
+    width: auto;
 }
 
 .h-100 {

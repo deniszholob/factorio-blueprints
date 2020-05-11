@@ -10,7 +10,7 @@ const elLinkList = document.getElementById("Link_List");
 const dataRenderService = new DataRenderService(elBlueprintList);
 const linkRenderService = new LinkRenderService(elLinkList);
 
-// Expose global funcitons
+// Expose global functions
 window.filterBlueprints = filterBlueprints;
 
 
@@ -37,13 +37,26 @@ function renderData(filterString) {
       if (
         !filterString ||
         data.name.toLowerCase().indexOf(filterString) > -1 ||
-        tag.toLowerCase().indexOf(filterString) > -1
+        tag.toLowerCase().indexOf(filterString) > -1 ||
+        data.tags.toLowerCase().indexOf(filterString) > -1
+        // indexOfStringArray(data.tags, filterString) > -1
       ) {
         dataRenderService.renderDataPoint(data);
       }
     });
   }
 }
+
+// function indexOfStringArray(tags, filterString) {
+//   if(tags){
+//     for(let i = 0; i < tags.length; i++){
+//       if(tags[i].toLowerCase().indexOf(filterString) > -1){
+//         return i;
+//       }
+//     }
+//   }
+//   return -1;
+// }
 
 function renderLinks() {
   if (typeof linksData === 'undefined' || linksData === null) {

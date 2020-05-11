@@ -34,4 +34,15 @@ export class UtilService {
     return elImage;
   }
 
+  /**
+   * @returns Image of a book or blueprint depending on the boolean input
+   * @param {Boolean} isBook
+   * @param {String} img path of blueprint icon
+   */
+  static getElBlueprintIcon(isBook, img) {
+    const elImage = document.createElement("img");
+    elImage.src = img;
+    elImage.alt = isBook ? "Blueprint Book" : "Blueprint";
+    return elImage;
+  }
 }

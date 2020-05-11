@@ -22,6 +22,9 @@ export class HttpClient {
           // Resolve the promise with the response text
           resolve(req.response);
         }
+        // if(req.status == 404){
+        //   resolve(req.statusText);
+        // }
         else {
           // Otherwise reject with the status text
           // which will hopefully be a meaningful error
