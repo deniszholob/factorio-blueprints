@@ -25,11 +25,11 @@ export const linksData = [
   },
   {
     name: "Nilaus",
-    url: "https://nilaus.atlassian.net/wiki/spaces/PM/pages/1605635/Factorio"
+    url: "https://pastebin.com/u/NilausTV"
   },
   {
-    name: "",
-    url: ""
+    name: "Nilaus Alt",
+    url: "https://nilaus.atlassian.net/wiki/spaces/PM/pages/1605635/Factorio"
   },
   {
     name: "",

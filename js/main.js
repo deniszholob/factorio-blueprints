@@ -71,4 +71,5 @@ function renderLinks() {
   }
 }
 
+// Run script
 onInit();
