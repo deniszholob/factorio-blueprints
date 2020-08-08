@@ -31,6 +31,7 @@ function blueprintEntry(version, isBook, hasIcon, name, fileName, tags) {
 export const blueprintData = [
   blueprintEntry("0.18", false, true, "Belt Balancer: 4x4", "bp-balancer-4x4"),
   blueprintEntry("0.18", false, true, "Belt Balancer: 8x8", "bp-balancer-8x8"),
+  blueprintEntry("1.0", false, true, "Train/Station Colors", "bp-train-station-colors"),
   blueprintEntry("0.18", true, false, "Starter: Burner/Basics", "book-starter-basics", "belt"),
   blueprintEntry("0.18", true, false, "Starter: MEF/Science", "book-starter-mef-science", "belt"),
   blueprintEntry("0.17", true, false, "Starter: Mini MEF/Mall (OLD)", "factorio-017-book-starter-mini-mef", "belt"),
