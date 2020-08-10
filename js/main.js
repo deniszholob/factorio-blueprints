@@ -26,6 +26,12 @@ function filterBlueprints(elId) {
 }
 
 function renderData(filterString) {
+  let inverse = false;
+  if(filterString && filterString.startsWith('!')){
+    inverse = true;
+    filterString = filterString.slice(1);
+  }
+
   if (typeof blueprintData === 'undefined' || blueprintData === null) {
     console.error("Error: blueprintData is null...");
   } else {
@@ -34,13 +40,19 @@ function renderData(filterString) {
     // Generate list
     blueprintData.forEach(data => {
       const tag = data.isBook ? 'book' : 'blueprint';
-      if (
+
+      let render = (
         !filterString ||
         data.name.toLowerCase().indexOf(filterString) > -1 ||
         tag.toLowerCase().indexOf(filterString) > -1 ||
-        data.tags.toLowerCase().indexOf(filterString) > -1
+        data.tags.toLowerCase().indexOf(filterString) > -1 ||
+        data.version.indexOf(filterString) > -1
         // indexOfStringArray(data.tags, filterString) > -1
-      ) {
+      );
+
+      render = inverse ? !render : render;
+
+      if (render) {
         dataRenderService.renderDataPoint(data);
       }
     });

@@ -69,6 +69,13 @@ section .container,
     text-decoration: none;
 }
 
+.list-group-center {
+    display: flex;
+    flex: 1 74px;
+    height: 100%;
+    border-right: 1px solid #313131;
+}
+
 .list-group-right {
     display: flex;
     flex: 2 0px;

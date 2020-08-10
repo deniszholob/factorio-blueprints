@@ -23,12 +23,29 @@ export class DataRenderService {
       elDivListItem.classList = "list-group-item align-items-center";
 
       elDivListItem.appendChild(getElLeft(data));
+      elDivListItem.appendChild(getElMid(data));
       elDivListItem.appendChild(getElRight(data));
 
       this.elRoot.appendChild(elDivListItem);
     }
   }
 
+}
+
+// ===== Helper Functions ===== //
+
+
+/**
+ * Center Element shows the factorio version
+ * @param {*} data Blueprint data
+ */
+function getElMid(data) {
+  const elDivListItemCenter = document.createElement("div");
+  elDivListItemCenter.classList = "list-group-center txt-muted";
+
+  elDivListItemCenter.innerHTML = data.version
+
+  return elDivListItemCenter;
 }
 
 /**

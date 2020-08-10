@@ -16,6 +16,10 @@ export const linksData = [
     url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1177804260"
   },
   {
+    name: "JDPlays",
+    url: "https://drive.google.com/drive/folders/1bM7Vh0Rf_JGQ39mRAXssDLmwsulDEdH_"
+  },
+  {
     name: "KoS",
     url: "https://drive.google.com/drive/folders/0BwVHGs2mds_XRUVCekwxYnNldnc"
   },
@@ -30,6 +34,10 @@ export const linksData = [
   {
     name: "Nilaus Alt",
     url: "https://nilaus.atlassian.net/wiki/spaces/PM/pages/1605635/Factorio"
+  },
+  {
+    name: "Train Intersections",
+    url: "https://forums.factorio.com/viewtopic.php?f=194&t=46855"
   },
   {
     name: "",
