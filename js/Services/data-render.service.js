@@ -21,7 +21,9 @@ export class DataRenderService {
     if (data.name && data.url) {
       const elDivListItem = document.createElement("div");
       elDivListItem.classList = "list-group-item align-items-center";
-
+      const prefix = getNamePrefix(data.name);
+      console.log(prefix);
+      if (prefix) { elDivListItem.classList.add(`bp-group-${prefix}`); }
       elDivListItem.appendChild(getElLeft(data));
       elDivListItem.appendChild(getElMid(data));
       elDivListItem.appendChild(getElRight(data));
@@ -34,6 +36,13 @@ export class DataRenderService {
 
 // ===== Helper Functions ===== //
 
+function getNamePrefix(name) {
+  const prefix = name.match(/(.*?):/);
+  if (prefix && prefix[1]) {
+    return prefix[1].toLowerCase();
+  }
+  return null;
+}
 
 /**
  * Center Element shows the factorio version

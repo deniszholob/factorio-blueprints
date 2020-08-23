@@ -167,3 +167,22 @@ img {
 .highlight {
     color: #1f6288;
 }
+
+.bp-group-util {
+    background-color: rgba(100, 80, 0, 0.05);
+}
+.bp-group-starter {
+    background-color: rgba(0, 100, 0, 0.05);
+}
+.bp-group-power {
+    background-color: rgba(0, 70, 100, 0.05);
+}
+.bp-group-builds {
+    background-color: rgba(0, 0, 100, 0.05);
+}
+.bp-group-rails {
+    background-color: rgba(200, 200, 200, 0.05);
+}
+.bp-group-old {
+    background-color: rgba(100, 0, 0, 0.05);
+}
