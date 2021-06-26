@@ -64,6 +64,7 @@ export const blueprintData = [
   blueprintEntry("1.0", true, false, "Util: Spawn Area", "book-spawn"),
   blueprintEntry("1.0", true, false, "Util: Tile Path Segments", "bp-path-segments", "tile, concrete, brick, walk"),
   blueprintEntry("1.0", true, false, "Game in a book (Big, loads slow)", "book-game-in-book", "GiB, factory"),
+  blueprintEntry("1.0", true, false, "Game in a book progressions", "book-gib-progression", "GiB, factory"),
   blueprintEntry("0.17", true, false, "OLD: Builds: Oil", "factorio-017-book-builds-oil", "petrol, sulfur, acid, plastic"),
   blueprintEntry("0.17", true, false, "OLD: Bot MEF/Mall (MojoD ME3 Remix)", "factorio-017-book-mef-mojod-me3-remix", "make everything factory, logic, circuits, shopping"),
   blueprintEntry("0.17", true, false, "OLD: Starter: Mini MEF/Mall", "factorio-017-book-starter-mini-mef", "belt"),
