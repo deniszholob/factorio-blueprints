@@ -45,7 +45,7 @@ export const blueprintData = [
   blueprintEntry("0.18", true, false, "Starter: MEF/Science", "book-starter-mef-science", ""),
   blueprintEntry("1.0", true, false, "Util: Smelting", "book-smelting", "furnace"),
   blueprintEntry("1.0", true, false, "Util: Mining", "book-mining"),
-  blueprintEntry("1.0", true, false, "Util: Defence", "book-defence", "wall, turrets"),
+  blueprintEntry("1.0", true, false, "Util: Defense", "book-defense", "wall, turrets"),
   blueprintEntry("1.0", true, false, "Science: Belt", "book-science-belt", "research"),
   blueprintEntry("1.0", true, false, "Power: Steam", "book-power-steam", "boiler"),
   blueprintEntry("1.0", true, false, "Power: Solar", "book-power-solar", "accumulator"),

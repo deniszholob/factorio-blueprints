@@ -8,7 +8,11 @@ Collection of [Personal Blueprints](https://deniszholob.github.io/factorio-bluep
 
 
 # Support Me
-If you found the blueprints or the source code useful, consider supporting me on Patreon.
+If you find the cheat sheet or the source code useful, consider:
 
-[![button](https://c5.patreon.com/external/logo/downloads_wordmark_white_on_coral.png)](https://www.patreon.com/deniszholob)
+* Donating Ko-fi: https://ko-fi.com/deniszholob
+* Supporting on Patreon: https://www.patreon.com/deniszholob
 
+
+# Screenshots
+![DDDGamer's Factorio Blueprints Website](screenshots/dddgamer-factorio-blueprints-screenshot.png)
