@@ -1,188 +1,185 @@
 html,
 body {
-    background-color: #141516;
-    color: #EEEEEE;
-    font-family: 'Play', sans-serif;
+  background-color: #141516;
+  color: #eeeeee;
+  font-family: "Play", sans-serif;
 }
 
 .txt-muted {
-    color: #808e99;
+  color: #808e99;
 }
 
 a {
-    color: #FF8400;
+  color: #ff8400;
 }
 
 a:hover {
-    color: #E46C00;
-    text-decoration: none;
+  color: #e46c00;
+  text-decoration: none;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 section,
 .section {
-    display: block;
+  display: block;
 }
 
 section .container,
 .section .container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 
 /* === List Group === */
 
-.list-group, .form-control {
-    min-width: 400px;
-    max-width: 600px;
-    margin: auto;
+.list-group,
+.form-control {
+  min-width: 400px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .list-group-item {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-color: #313131;
-    padding: 0;
-    display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: #313131;
+  padding: 0;
+  display: flex;
 }
 
-.list-group-item>*:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+.list-group-item > *:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.list-group-item>* {
-    padding: 0.5rem 0.75rem;
-    flex: 1 100%;
-    position: relative;
+.list-group-item > * {
+  padding: 0.5rem 0.75rem;
+  flex: 1 100%;
+  position: relative;
 }
 
 .list-group-left {
-    display: flex;
-    border-right: 1px solid #313131;
+  display: flex;
+  border-right: 1px solid #313131;
 }
 
 .list-group-left:hover {
-    color: #FF8400;
-    text-decoration: none;
+  color: #ff8400;
+  text-decoration: none;
 }
 
 .list-group-center {
-    display: flex;
-    flex: 1 74px;
-    height: 100%;
-    border-right: 1px solid #313131;
+  display: flex;
+  flex: 1 74px;
+  height: 100%;
+  border-right: 1px solid #313131;
 }
 
 .list-group-right {
-    display: flex;
-    flex: 2 0px;
+  display: flex;
+  flex: 2 0px;
 }
-
 
 /* === Form Control === */
 
 .form-control,
 .form-control:focus {
-    background: rgba(0, 0, 0, 0.4);
-    border-color: #313131;
-    color: #ced4da;
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #313131;
+  color: #ced4da;
 }
 
 .form-control:focus {
-    box-shadow: 0 0 0 1px #1f6288;
+  box-shadow: 0 0 0 1px #1f6288;
 }
-
 
 /* === Misc === */
 
 img {
-    /* height: fit-content;
+  /* height: fit-content;
     width: fit-content; */
-    height: 48px;
-    width: auto;
+  height: 48px;
+  width: auto;
 }
 
 .h-100 {
-    height: 100% !important;
+  height: 100% !important;
 }
 
 .btn-link {
-    padding: 0;
-    vertical-align: baseline;
-    color: #1f6288;
+  padding: 0;
+  vertical-align: baseline;
+  color: #1f6288;
 }
 
 .fas {
-    padding: 0.5rem 0.25rem;
+  padding: 0.5rem 0.25rem;
 }
 
 .bp-txt {
-    margin: 0 0.75rem;
+  margin: 0 0.75rem;
 }
-
 
 /* === Tooltip === */
 
 .tool-tip {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .tool-tip .tool-tip-text {
-    visibility: hidden;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    font-size: 0.9rem;
-    text-align: center;
-    border-radius: 6px;
-    border: 1px solid rgba(100, 100, 100, 0.3);
-    padding: 0.25rem 0.75rem;
-    position: absolute;
-    z-index: 1;
-    bottom: 115%;
-    left: 0;
-    transition: opacity 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  padding: 0.25rem 0.75rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 115%;
+  left: 0;
+  transition: opacity 0.3s;
 }
 
 .tool-tip .tool-tip-text::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgba(100, 100, 100, 0.3) transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(100, 100, 100, 0.3) transparent transparent transparent;
 }
 
 .tool-tip:hover .tool-tip-text {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .highlight {
-    color: #1f6288;
+  color: #1f6288;
 }
 
 .bp-group-util {
-    background-color: rgba(100, 80, 0, 0.05);
+  background-color: rgba(100, 80, 0, 0.05);
 }
 .bp-group-starter {
-    background-color: rgba(0, 100, 0, 0.05);
+  background-color: rgba(0, 100, 0, 0.05);
 }
 .bp-group-power {
-    background-color: rgba(0, 70, 100, 0.05);
+  background-color: rgba(0, 70, 100, 0.05);
 }
 .bp-group-builds {
-    background-color: rgba(0, 0, 100, 0.05);
+  background-color: rgba(0, 0, 100, 0.05);
 }
 .bp-group-rails {
-    background-color: rgba(200, 200, 200, 0.05);
+  background-color: rgba(200, 200, 200, 0.05);
 }
 .bp-group-old {
-    background-color: rgba(100, 0, 0, 0.05);
+  background-color: rgba(100, 0, 0, 0.05);
 }

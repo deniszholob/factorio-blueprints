@@ -1,5 +1,33 @@
 {
-    "cSpell.words": [
-        "Factorio"
-    ]
+  "files.exclude": {
+    "**/screenshots": true,
+    "**/.editorconfig": true,
+    "**/.gitignore": true,
+    "**/FUNDING.yml": true,
+    "**/LICENSE": true,
+    "**/debug.log": true
+  },
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    80
+  ],
+  "explorer.sortOrderLexicographicOptions": "lower", // Case sensitive file ordering in tree
+  "workbench.iconTheme": "material-icon-theme",
+  "[html, scss, typescript, javascript, json, jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "adrianwilczynski",
+    "Autotorio",
+    "deniszholob",
+    "Factorio",
+    "giga",
+    "mojod",
+    "Nilaus",
+    "noopener",
+    "Softmod",
+    "Teoxoy",
+    "Xterminator",
+    "Zholob"
+  ]
 }

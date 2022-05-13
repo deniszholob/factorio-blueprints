@@ -27,7 +27,7 @@ function filterBlueprints(elId) {
 
 function renderData(filterString) {
   let inverse = false;
-  if(filterString && filterString.startsWith('!')){
+  if (filterString && filterString.startsWith('!')) {
     inverse = true;
     filterString = filterString.slice(1);
   }
