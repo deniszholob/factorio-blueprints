@@ -45,4 +45,15 @@ export class UtilService {
     elImage.alt = isBook ? "Blueprint Book" : "Blueprint";
     return elImage;
   }
+
+  static strongToIdString(s){
+    let str = s.toLowerCase();
+    str = str.replace(/:\s/g, '_');
+    str = str.replace(/\s/g, '-');
+    str = str.replace(/:/g, '_');
+    str = str.replace(/\//g, '-');
+    str = str.replace(/\(.*\)/g, '');
+    str = str.replace(/-$/, '');
+    return str;
+  }
 }

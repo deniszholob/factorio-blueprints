@@ -1,0 +1,21 @@
+{
+  "name": "DDDGamer's Factorio Blueprint Collection",
+  "short_name": "DDD Factorio BP",
+  "description": "DDDGamer's Factorio Blueprint Collection",
+  "theme_color": "#189ADF",
+  "background_color": "#333333",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./?utm_source=homescreen",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": [
+      {
+        "src": "blueprint-icons/Blueprint_book.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      }
+  ]
+}

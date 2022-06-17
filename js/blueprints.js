@@ -67,6 +67,7 @@ export const blueprintData = [
   blueprintEntry("0.17", true, false, "OLD: Builds: Oil", "factorio-017-book-builds-oil", "petrol, sulfur, acid, plastic"),
   blueprintEntry("0.17", true, false, "OLD: Bot MEF/Mall (MojoD ME3 Remix)", "factorio-017-book-mef-mojod-me3-remix", "make everything factory, logic, circuits, shopping"),
   blueprintEntry("0.17", true, false, "OLD: Bot MEF Science (WIP)", "factorio-017-book-msf", "make science factory, logic, shopping, research"),
+  blueprintEntry("0.17", true, false, "OLD: Bot MEF Rail Stacker", "factorio-017-book-mef-stacker", "make science factory, logic, shopping, research, rail, train, track, stacker, station"),
   blueprintEntry("0.17", true, false, "OLD: Starter: Mini MEF/Mall", "factorio-017-book-starter-mini-mef", "belt"),
   // blueprintEntry("0.18",  true,   false,   "Name", "Filename", "Search, Tags"),
   //                version, isBook, hasIcon, name,   fileName,   tags

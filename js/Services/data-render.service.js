@@ -21,9 +21,11 @@ export class DataRenderService {
     if (data.name && data.url) {
       const elDivListItem = document.createElement("div");
       elDivListItem.classList = "list-group-item align-items-center";
+      elDivListItem.id = UtilService.strongToIdString(data.name);
+
       const prefix = getNamePrefix(data.name);
-      console.log(prefix);
       if (prefix) { elDivListItem.classList.add(`bp-group-${prefix}`); }
+
       elDivListItem.appendChild(getElLeft(data));
       elDivListItem.appendChild(getElMid(data));
       elDivListItem.appendChild(getElRight(data));
@@ -31,7 +33,6 @@ export class DataRenderService {
       this.elRoot.appendChild(elDivListItem);
     }
   }
-
 }
 
 // ===== Helper Functions ===== //
