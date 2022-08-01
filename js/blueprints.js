@@ -67,6 +67,8 @@ export const blueprintData = [
   blueprintEntry("1.0", true, false, "Util: Tile Path Segments", "bp-path-segments", "tile, concrete, brick, walk"),
   blueprintEntry("1.0", true, false, "Game in a Book (Big, loads slow)", "book-gib-game-in-book", "GiB, factory"),
   blueprintEntry("1.0", true, false, "Game in a Book Progressions", "book-gib-progression", "GiB, factory"),
+  blueprintEntry("1.1.61", true, false, "Mod: Seablock", "book-mod-seablock", "mod, sea, block"),
+  blueprintEntry("1.1.63", true, false, "Mod: Spaceblock", "book-mod-spaceblock", "mod, space, block"),
   blueprintEntry("0.17", true, false, "OLD: Builds: Oil", "factorio-017-book-builds-oil", "petrol, sulfur, acid, plastic"),
   blueprintEntry("0.17", true, false, "OLD: Bot MEF/Mall (MojoD ME3 Remix)", "factorio-017-book-mef-mojod-me3-remix", "make everything factory, logic, circuits, shopping"),
   blueprintEntry("0.17", true, false, "OLD: Bot MEF Science (WIP)", "factorio-017-book-msf", "make science factory, logic, shopping, research"),
