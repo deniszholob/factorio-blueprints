@@ -40,7 +40,7 @@ export const blueprintData = [
   blueprintEntry("1.1.60", false, true, "Util: Belt Balancer: 4x4", "bp-balancer-4x4"),
   blueprintEntry("1.1.60", false, true, "Util: Belt Balancer: 8x8", "bp-balancer-8x8"),
   blueprintEntry("1.1.60", false, true, "Util: Train/Station Colors", "bp-train-station-colors", "train, rail, track"),
-  blueprintEntry("1.1.60", false, true, "Util: Best Fuel Selector", "bp-best-fuel-selector"),
+  blueprintEntry("1.1.60", false, false, "Util: Best Fuel Selector", "bp-best-fuel-selector"),
   blueprintEntry("1.0", true, false, "Starter: Burner City", "book-starter-burner-city", "drill"),
   blueprintEntry("1.0", true, false, "Starter: Burner/Basics", "book-starter-basics", "belt"),
   blueprintEntry("0.18", true, false, "Starter: MEF/Science", "book-starter-mef-science", ""),
