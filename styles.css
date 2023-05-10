@@ -81,6 +81,7 @@ section .container,
   flex: 1 74px;
   height: 100%;
   border-right: 1px solid var(--c-dark);
+  min-width: 85px;
 }
 
 .list-group-right {
