@@ -8,9 +8,8 @@
     "**/debug.log": true
   },
   "editor.renderWhitespace": "all",
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
+  "editor.formatOnSave": false,
   "explorer.sortOrderLexicographicOptions": "lower", // Case sensitive file ordering in tree
   "workbench.iconTheme": "material-icon-theme",
   "[html, scss, typescript, javascript, json, jsonc]": {
