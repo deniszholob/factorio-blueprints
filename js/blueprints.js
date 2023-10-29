@@ -70,6 +70,7 @@ export const blueprintData = [
   blueprintEntry("1.0", true, false, "Game in a Book (Big, loads slow)", "book-gib-game-in-book", "GiB, factory"),
   blueprintEntry("1.0", true, false, "Game in a Book Progressions", "book-gib-progression", "GiB, factory"),
   blueprintEntry("1.1.80", true, false, "Speed run", "book-speed-run", "speed run"),
+  blueprintEntry("1.1.87", true, false, "Ribbon World 36", "book-ribbon-36", "ribbon world"),
   blueprintEntry("1.1.61", true, false, "Mod: Seablock", "book-mod-seablock", "mod, sea, block"),
   blueprintEntry("1.1.63", true, false, "Mod: Spaceblock", "book-mod-spaceblock", "mod, space, block"),
   blueprintEntry("1.1.80", true, false, "Mod: Industrial Revolution 3", "book-mod-industrial-revolution-3", "mod, industrial, revolution"),
