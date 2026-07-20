@@ -291,3 +291,19 @@ img {
 .map-group {
   background-color: rgba(0, 100, 100, 0.05);
 }
+
+
+.sticky-left-panel {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y));
+  background: rgba(0, 0, 0, 0.8);
+  writing-mode: sideways-rl;
+  text-orientation: mixed;
+
+  .btn {
+    padding: 0.5rem 0.25rem;
+  }
+}

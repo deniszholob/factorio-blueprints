@@ -82,8 +82,6 @@
       <div class="container">
         <h1 class="text-center">DDDGamer's Factorio Blueprint Collection</h1>
         <p class="text-center txt-muted">
-          <strong>Click to copy</strong> on the Blueprint, then import in Factorio Blueprint menu.
-          <br>
           Use <a href="https://autotorio.com/blueprint">Autotorio</a> tool to mirror blueprints.
           <br>
           Also see the <a href="https://factoriocheatsheet.com" rel="noopener" target="_blank">Factorio Cheat Sheet</a>
@@ -92,13 +90,23 @@
         <br>
         <p class="text-center text-muted">If you find the blueprints useful, you can </p>
         <div class="text-center support-buttons">
-          <a href="https://ko-fi.com/deniszholob" target="_blank" rel="noopener" class="btn btn-outline-primary">
-            Buy me Ko-fi
+          <a class="btn btn-outline-primary" href="https://ko-fi.com/deniszholob" target="_blank" rel="noopener">
+            Buy me <br />
+            <i class="fa fa-coffee"></i>
+            Ko-fi
           </a>
-          <a href="https://patreon.com/deniszholob" target="_blank" rel="noopener" class="btn btn-outline-primary">
-            Support on Patreon
+          <a class="btn btn-outline-primary" href="https://patreon.com/deniszholob" target="_blank" rel="noopener">
+            Support me on <br />
+            <i class="fab fa-patreon"></i>
+            Patreon
+          </a>
+          <a class="btn btn-outline-primary" href="https://deniszholob.github.io/factory-time" target="_blank" rel="noopener noreferrer">
+            Play my game <br />
+            <i class="fa fa-industry"></i>
+            "Factory Time"
           </a>
         </div>
+
       </div>
     </section>
 
@@ -109,6 +117,9 @@
             <h3 class="text-center">Blueprints</h3>
             <span class="collection-count txt-muted" id="Blueprint_Count">0/0</span>
           </div>
+          <p class="text-center txt-muted mb-2">
+          <strong>Click to copy</strong> on the Blueprint, then import in Factorio Blueprint menu.
+          </p>
           <div class="search-field mb-3">
             <input type="text" class="form-control" id="InputSearch" onkeyup="filterBlueprints('InputSearch')"
               placeholder="Filter/Search Blueprint Name" aria-label="Blueprint Name">
@@ -131,6 +142,12 @@
             <h3 class="text-center">Maps</h3>
             <span class="collection-count txt-muted" id="Maps_Count">0/0</span>
           </div>
+          <p class="text-center txt-muted mb-2">
+            Generated with the
+            <a href="https://mods.factorio.com/mod/mapshot" rel="noopener" target="_blank">mapshot mod</a>
+            by
+            <a href="https://github.com/Palats/mapshot" rel="noopener" target="_blank">Palats/mapshot</a>
+          </p>
           <div class="search-field mb-3">
             <input type="text" class="form-control" id="InputSearchMaps" onkeyup="filterMaps('InputSearchMaps')"
               placeholder="Filter/Search Map Name" aria-label="Map Name">
@@ -173,6 +190,14 @@
       </div>
     </div>
   </footer>
+
+
+<div class="sticky-left-panel">
+  <a class="btn btn-outline-primary" href="https://deniszholob.github.io/factory-time" target="_blank" rel="noopener noreferrer">
+    Play my game: "Factory Time"
+  </a>
+</div>
+
 
   <!-- https://jakearchibald.com/2017/es-modules-in-browsers/ -->
   <script src="./js/main.js" type="module"></script>
