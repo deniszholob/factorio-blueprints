@@ -101,11 +101,52 @@
         </div>
       </div>
     </section>
+
     <section>
-      <div class="container">
-        <input type="text" class="form-control mb-3" id="InputSearch" onkeyup="filterBlueprints('InputSearch')"
-          placeholder="Filter/Search Blueprint Name" aria-label="Username">
-        <div id="Blueprint_List" class="list-group"></div>
+      <div class="container collections-grid">
+        <div class="collection-panel">
+          <div class="collection-heading">
+            <h3 class="text-center">Blueprints</h3>
+            <span class="collection-count txt-muted" id="Blueprint_Count">0/0</span>
+          </div>
+          <div class="search-field mb-3">
+            <input type="text" class="form-control" id="InputSearch" onkeyup="filterBlueprints('InputSearch')"
+              placeholder="Filter/Search Blueprint Name" aria-label="Blueprint Name">
+            <button type="button" class="search-clear" id="ClearBlueprintSearchInline" aria-label="Clear blueprint search"
+              title="Clear search">
+              x
+            </button>
+          </div>
+          <div id="Blueprint_List" class="list-group"></div>
+          <div id="Blueprint_Empty" class="collection-empty txt-muted" hidden>
+            <div>No blueprints match this search.</div>
+            <button type="button" class="btn btn-sm btn-outline-primary mt-2" id="ClearBlueprintSearch">
+              Clear search
+            </button>
+          </div>
+        </div>
+
+        <div class="collection-panel">
+          <div class="collection-heading">
+            <h3 class="text-center">Maps</h3>
+            <span class="collection-count txt-muted" id="Maps_Count">0/0</span>
+          </div>
+          <div class="search-field mb-3">
+            <input type="text" class="form-control" id="InputSearchMaps" onkeyup="filterMaps('InputSearchMaps')"
+              placeholder="Filter/Search Map Name" aria-label="Map Name">
+            <button type="button" class="search-clear" id="ClearMapSearchInline" aria-label="Clear map search"
+              title="Clear search">
+              x
+            </button>
+          </div>
+          <div id="Maps_List" class="list-group"></div>
+          <div id="Maps_Empty" class="collection-empty txt-muted" hidden>
+            <div>No maps match this search.</div>
+            <button type="button" class="btn btn-sm btn-outline-primary mt-2" id="ClearMapSearch">
+              Clear search
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 

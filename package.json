@@ -1,0 +1,7 @@
+{
+  "name": "factorio-blueprints",
+  "private": true,
+  "scripts": {
+    "generate:maps": "node scripts/generate-maps.js"
+  }
+}

@@ -4,12 +4,15 @@ export class UtilService {
   /**
    * <a href="url" rel="noopener" target="_blank"></a>
    * @param {String} url
+   * @param {Boolean} openInNewTab
    */
-  static getExternalLinkEl(url) {
+  static getExternalLinkEl(url, openInNewTab = true) {
     const elLink = document.createElement("a");
     elLink.href = url;
-    elLink.rel = "noopener";
-    elLink.target = "_blank";
+    if (openInNewTab) {
+      elLink.rel = "noopener";
+      elLink.target = "_blank";
+    }
     return elLink;
   }
 
@@ -19,7 +22,7 @@ export class UtilService {
    */
   static getIcon(id) {
     const elIcon = document.createElement("i");
-    elIcon.classList = "fas fa-xs fa-" + id;
+    elIcon.className = "fas fa-xs fa-" + id;
     return elIcon;
   }
 

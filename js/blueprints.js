@@ -60,7 +60,7 @@ export const blueprintData = [
   blueprintEntry("1.1.80", true, false, "Builds: Military", "book-builds-military"),
   blueprintEntry("1.1.80", true, false, "Builds: Bots + Beacons", "book-builds-bot-beaconed", "circuits, gears, smelting"),
   blueprintEntry("1.1.60", true, false, "Builds: TRF - Train Robot Factories", "book-builds-train-robot-factory", "train, rail, track, robot, beacon, circuits, gears, smelting, super, mega, giga"),
-  blueprintEntry("1.1.110", true, true, "City Blocks", "book-city-block", ""),
+  blueprintEntry("1.1.110", true, false, "City Blocks", "book-city-block", ""),
   blueprintEntry("1.0", true, false, "Builds: Bots + Beacons + Trains (Super)", "book-builds-train-bot-super", "train, rail, track, circuits, gears, smelting, super, mega, giga"),
   blueprintEntry("1.1.80", true, true, "Bot MEF/Mall (MojoD + Rain9441 Remix)", "book-mef-bot-not-a-mall", "make everything factory, logic, circuits, shopping, science"),
   blueprintEntry("1.0.107", true, false, "Rails: 2 Lane RHD (MojoD Remix)", "book-rails-2-lane-rhd-mojod-remix", "train, rail, track, intersection"),

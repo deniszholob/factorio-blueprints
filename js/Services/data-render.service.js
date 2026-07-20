@@ -20,7 +20,7 @@ export class DataRenderService {
   renderDataPoint(data) {
     if (data.name && data.url) {
       const elDivListItem = document.createElement("div");
-      elDivListItem.classList = "list-group-item align-items-center";
+      elDivListItem.className = "list-group-item align-items-center";
       elDivListItem.id = UtilService.strongToIdString(data.name);
 
       const prefix = getNamePrefix(data.name);
@@ -51,7 +51,7 @@ function getNamePrefix(name) {
  */
 function getElMid(data) {
   const elDivListItemCenter = document.createElement("div");
-  elDivListItemCenter.classList = "list-group-center txt-muted";
+  elDivListItemCenter.className = "list-group-center txt-muted";
 
   elDivListItemCenter.innerHTML = data.version
 
@@ -65,11 +65,11 @@ function getElMid(data) {
  */
 function getElLeft(data) {
   const elDivListItemLeft = document.createElement("div");
-  elDivListItemLeft.classList = "list-group-left tool-tip align-items-center";
+  elDivListItemLeft.className = "list-group-left tool-tip align-items-center";
 
   // Blueprint Name Text
   const elSpanText = document.createElement("span");
-  elSpanText.classList = "bp-txt";
+  elSpanText.className = "bp-txt";
   const elTextNode = document.createTextNode(" " + data.name);
   elSpanText.appendChild(UtilService.getIcon("paste"));
   elSpanText.appendChild(elTextNode);
@@ -112,7 +112,7 @@ function getElLeft(data) {
  */
 function getElRight(data) {
   const elDivListItemRight = UtilService.getExternalLinkEl(data.url);
-  elDivListItemRight.classList = "list-group-right tool-tip txt-muted";
+  elDivListItemRight.className = "list-group-right tool-tip txt-muted";
 
   elDivListItemRight.appendChild(UtilService.getIcon("external-link-alt"));
   elDivListItemRight.appendChild(getElTooltip("Source"));
@@ -126,11 +126,10 @@ function getElRight(data) {
  */
 function getElTooltip(text) {
   const elDivTooltip = document.createElement("div");
-  elDivTooltip.classList = "tool-tip-text";
+  elDivTooltip.className = "tool-tip-text";
 
   const elTextNode = document.createTextNode(text);
   elDivTooltip.appendChild(elTextNode);
 
   return elDivTooltip;
 }
-
