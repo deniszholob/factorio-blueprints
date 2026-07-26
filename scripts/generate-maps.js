@@ -7,6 +7,8 @@ const repoRoot = path.resolve(__dirname, "..");
 const mapsRoot = path.join(repoRoot, "maps");
 const outputFile = path.join(repoRoot, "js", "maps.js");
 
+const INCLUDE_INDEX_IN_URL = false;
+
 function readJsonIfExists(filePath) {
   if (!fs.existsSync(filePath)) {
     return null;
@@ -57,6 +59,8 @@ function formatTags(mapshotJson) {
 }
 
 function buildMapEntry(folderName) {
+  console.log(`Processing map folder: ${folderName}`);
+
   const folderPath = path.join(mapsRoot, folderName);
   const indexPath = path.join(folderPath, "index.html");
   const thumbnailPath = path.join(folderPath, "thumbnail.png");
@@ -71,11 +75,14 @@ function buildMapEntry(folderName) {
   const version = formatVersion(mapshotJson && mapshotJson.game_version);
   const tags = formatTags(mapshotJson);
 
+
+  const index = INCLUDE_INDEX_IN_URL ? "index.html" : "";
+
   return {
     name: displayName,
     folder: folderName,
     version,
-    url: `./maps/${folderName}/index.html`,
+    url: `./maps/${folderName}/${index}?ld=1`,
     thumbnail: `./maps/${folderName}/thumbnail.png`,
     tags,
   };
